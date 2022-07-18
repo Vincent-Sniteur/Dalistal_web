@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestoBato</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="top-app-bar">
+        <div class="top-app-bar__container">
+          <div class="top-app-bar__section top-app-bar__section--left">
+            <a class="top-app-bar__link" href="#">
+              <div class="logo"></div>
+            </a>
+          </div>
+      
+          <div class="top-app-bar__section top-app-bar__section--middle">
+            <nav class="navigation">
+              <a class="navigation__link" href="#">
+                <span class="navigation__label">Acceuil</span>
+                <div class="navigation__line"></div>
+              </a>
+              <a class="navigation__link" href="#">
+                <span class="navigation__label">Menu</span>
+                <div class="navigation__line"></div>
+              </a>
+              <a class="navigation__link" href="#">
+                <span class="navigation__label">About</span>
+                <div class="navigation__line"></div>
+              </a>
+              <a class="navigation__link" href="#">
+                <span class="navigation__label">Contact</span>
+                <div class="navigation__line"></div>
+              </a>
+            </nav>
+          </div>
+      
+          <div class="top-app-bar__section top-app-bar__section--right">
+            <button class="hamburger-menu" id="navigation-drawer-toggler">
+              <span class="hamburger-menu__line"></span>
+              <span class="hamburger-menu__line"></span>
+              <span class="hamburger-menu__line"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      
+      <aside class="drawer" id="navigation-drawer">
+        <div class="drawer__logo">
+          <div class="logo"></div>
+        </div>
+        <nav class="drawer-navigation">
+          <a class="drawer-navigation__link" href="#">
+            Acceuil
+            <div class="drawer-navigation__line"></div>
+          </a>
+          <a class="drawer-navigation__link" href="#">
+            Menu
+            <div class="drawer-navigation__line"></div>
+          </a>
+          <a class="drawer-navigation__link" href="#">
+            About
+            <div class="drawer-navigation__line"></div>
+          </a>
+        </nav>
+      </aside>
+      
+      <main class="container">
+        
+        <div class="hero">
+          <img class="hero__logo" src="https://via.placeholder.com/150" alt="">
+          <h2 class="hero__subtitle">Avant Ouverture</h2>
+          <div class="timer">
+            <div class="timer__pannel">
+              <div class="timer__time-container">
+                <p class="timer__time" id="timer-days"></p>
+              </div>
+              <p class="timer__time-type">jours</p>
+            </div>
+            <div class="timer__pannel">
+              <div class="timer__time-container">
+                <p class="timer__time" id="timer-hours"></p>
+              </div>
+              <p class="timer__time-type">heures</p>
+            </div>
+            <div class="timer__pannel">
+              <div class="timer__time-container">
+                <p class="timer__time" id="timer-minutes"></p>
+              </div>
+              <p class="timer__time-type">minutes</p>
+            </div>
+            <div class="timer__pannel">
+              <div class="timer__time-container">
+                <p class="timer__time" id="timer-seconds"></p>
+              </div>
+              <p class="timer__time-type">secondes</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="presentation">
+          
+          <div class="presentation__card">
+            <div class="presentation__image-container">
+              <img class="presentation__image" src="https://via.placeholder.com/150" alt="">
+            </div>
+            <section class="presentation__info">
+              <a class="presentation__link" href="#">
+                <h1 class="presentation__title">Menu 1</h1>
+              </a>
+              <p class="presentation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut laborum, totam modi beatae eius provident, quo suscipit hic laboriosam recusandae optio, officia sit! Nemo praesentium aperiam aliquam tempora aliquid.</p>
+            </section>
+          </div>
+          
+          <div class="presentation__card">
+            <section class="presentation__info presentation__info--first-order">
+              <a class="presentation__link" href="#">
+                <h1 class="presentation__title">Menu 2</h1>
+              </a>
+              <p class="presentation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut laborum, totam modi beatae eius provident, quo suscipit hic laboriosam recusandae optio, officia sit! Nemo praesentium aperiam aliquam tempora aliquid.</p>
+            </section>
+            <div class="presentation__image-container presentation__image-container--second-order">
+              <img class="presentation__image" src="https://via.placeholder.com/150" alt="">
+            </div>
+          </div>
+          
+          <div class="presentation__card">
+            <div class="presentation__image-container">
+              <img class="presentation__image" src="https://via.placeholder.com/150" alt="">
+            </div>
+            <section class="presentation__info">
+              <a class="presentation__link" href="#">
+                <h1 class="presentation__title">Menu 3</h1>
+              </a>
+              <p class="presentation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut laborum, totam modi beatae eius provident, quo suscipit hic laboriosam recusandae optio, officia sit! Nemo praesentium aperiam aliquam tempora aliquid.</p>
+            </section>
+          </div>
+          
+          <div class="presentation__card">
+            <section class="presentation__info presentation__info--first-order">
+              <a class="presentation__link" href="#">
+                <h1 class="presentation__title">Menu 4</h1>
+              </a>
+              <p class="presentation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut laborum, totam modi beatae eius provident, quo suscipit hic laboriosam recusandae optio, officia sit! Nemo praesentium aperiam aliquam tempora aliquid.</p>
+            </section>
+            <div class="presentation__image-container presentation__image-container--second-order">
+              <img class="presentation__image" src="https://via.placeholder.com/150" alt="">
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18165.404189911962!2d2.354966026868358!3d48.88812478696602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e75c411bf4f%3A0x73b39f422cc28066!2zUG9pbnQgw4lwaMOpbcOocmU!5e0!3m2!1sfr!2sfr!4v1646510873503!5m2!1sfr!2sfr" height="300" width="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+        </div>
+        
+        <footer class="footer">
+          
+          <div class="footer__sponsor">
+            <img class="footer__logo" src="https://via.placeholder.com/150" alt="">
+            <div class="footer__info">
+              <h2 class="footer__title">Avis Client</h2>
+              <p class="footer__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at quibusdam atque ut.</p>
+            </div>
+          </div>
+          
+          <div class="footer__sponsor">
+            <img class="footer__logo" src="https://via.placeholder.com/150" alt="">
+            <div class="footer__info">
+              <h2 class="footer__title">Avis Client</h2>
+              <p class="footer__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at quibusdam atque ut.</p>
+            </div>
+          </div>
+          
+          <div class="footer__sponsor">
+            <img class="footer__logo" src="https://via.placeholder.com/150" alt="">
+            <div class="footer__info">
+              <h2 class="footer__title">Avis Client</h2>
+              <p class="footer__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at quibusdam atque ut.</p>
+            </div>
+          </div>
+          
+          <div class="footer__sponsor">
+            <img class="footer__logo" src="https://via.placeholder.com/150" alt="">
+            <div class="footer__info">
+              <h2 class="footer__title">Avis Client</h2>
+              <p class="footer__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at quibusdam atque ut.</p>
+            </div>
+          </div>
+          
+          <div class="footer__sponsor">
+            <img class="footer__logo" src="https://via.placeholder.com/150" alt="">
+            <div class="footer__info">
+              <h2 class="footer__title">Avis Client</h2>
+              <p class="footer__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at quibusdam atque ut.</p>
+            </div>
+          </div>
+          
+          <div class="footer__sponsor">
+            <img class="footer__logo" src="https://via.placeholder.com/150" alt="">
+            <div class="footer__info">
+              <h2 class="footer__title">Avis Client</h2>
+              <p class="footer__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at quibusdam atque ut.</p>
+            </div>
+          </div>
+          
+        </footer>
+      </main>
+      
+      <button class="fab" id="fab">
+        <svg class="fab__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+      </button>
+      
+      <div class="overlay" id="navigation-drawer-overlay"></div>
+
+      <script src="js/main.js"></script>
+</body>
+</html>
